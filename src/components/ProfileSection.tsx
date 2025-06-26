@@ -55,7 +55,7 @@ export function ProfileSection({ participant }: ProfileSectionProps) {
       />
       
       <div className="flex-1">
-        <div className='mb-6'>
+        <div className='mb-2 md:mb-6'>
           <h2 className="text-base sm:text-lg lg:text-3xl font-bold text-[#498AFD]">
             {participant.name}
           </h2>
@@ -65,30 +65,30 @@ export function ProfileSection({ participant }: ProfileSectionProps) {
           {/* Left Column - Contact Info */}
           <div className="space-y-2 lg:space-y-2 xl:space-y-3">
             <div className="flex items-center gap-3 ">
-              <Calendar className="w-4  h-4 md:w-8 md:h-8" />
-              <span className="text-lg text-[#316983] font-medium">{participant.birthDate}</span>
+              <Calendar className="w-6 h-6 md:w-8 md:h-8" />
+              <span className=" text-sm md:text-lg text-[#316983] font-medium">{participant.birthDate}</span>
             </div>
             
             <div className="flex items-center gap-3 ">
-              <Phone className="w-4 h-4 md:w-8 md:h-8" />
-              <span className="text-lg text-[#316983] font-medium">{participant.phone}</span>
+              <Phone className="w-6 h-6 md:w-8 md:h-8" />
+              <span className="text-sm md:text-lg text-[#316983] font-medium">{participant.phone}</span>
             </div>
             
             <div className="flex items-center gap-3 ">
-              <Mail className="w-4 h-4 md:w-8 md:h-8" />
-              <span className="text-lg text-[#316983] font-medium">{participant.email}</span>
+              <Mail className="w-6 h-6 md:w-8 md:h-8" />
+              <span className="text-sm md:text-lg text-[#316983] font-medium">{participant.email}</span>
             </div>
           </div>
           
           {/* Right Column - Address */}
           <div className="flex items-start gap-3 ">
-            <MapPin className="w-4 h-4 mt-0.5 md:w-8 md:h-8 " />
+            <MapPin className="w-6 h-6 mt-0.5 md:w-8 md:h-8 " />
             <div>
-              <div className="text-lg text-[#316983] font-medium">{participant.address.street},</div>
-              <div className="text-lg text-[#316983] font-medium">{participant.address.building}</div>
-              <div className="text-lg text-[#316983] font-medium">{participant.address.apartment}</div>
-              <div className="text-lg text-[#316983] font-medium">{participant.address.postalCode} {participant.address.city}</div>
-              <div className="text-lg text-[#316983] font-medium">{participant.address.country}</div>
+              <div className="text-sm md:text-lg text-[#316983] font-medium">{participant.address.street},</div>
+              <div className="text-sm md:text-lg text-[#316983] font-medium">{participant.address.building}</div>
+              <div className="text-sm md:text-lg text-[#316983] font-medium">{participant.address.apartment}</div>
+              <div className="text-sm md:text-lg text-[#316983] font-medium">{participant.address.postalCode} {participant.address.city}</div>
+              <div className="text-sm md:text-lg text-[#316983] font-medium">{participant.address.country}</div>
             </div>
           </div>
         </div>

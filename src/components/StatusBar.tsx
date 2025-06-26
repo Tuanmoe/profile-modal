@@ -14,7 +14,7 @@ export function StatusBar({ status }: StatusBarProps) {
           variant="outline" 
           className=" border-none text-red-500 px-2 py-1 text-lg rounded-full"
         >
-          <span className="text-3xl mr-1 mt-[-8px]">●</span> {status}
+          <span className="md:text-3xl text-md mr-1 mt-[-8px]">●</span> {status}
         </Badge>
       </div>
     </div>

@@ -20,7 +20,7 @@ export function ActionButtons({ onDelete, onEdit }: ActionButtonsProps) {
     <div className="flex flex-col sm:flex-row justify-between gap-2 sm:gap-0 pt-3 pb-0 sm:pt-6 sm:pb-0 lg:pt-4 lg:pb-0 xl:pt-8 xl:pb-0 bg-white rounded-b-lg">
       <Button 
         variant="outline"
-        className="flex items-center bg-none border-2 border-[#FF9777] gap-2 text-[#FF9777] rounded-bl-lg rounded-tr-lg rounded-tl-none rounded-br-none"
+        className="flex items-center bg-none border-2 border-[#FF9777] gap-2 text-[#FF9777] rounded-bl-lg rounded-tr-lg rounded-tl-lg rounded-br-lg md:rounded-tl-none md:rounded-br-none"
         onClick={onDelete}
       >
         <Trash2 className="w-8 h-8" />
@@ -28,10 +28,10 @@ export function ActionButtons({ onDelete, onEdit }: ActionButtonsProps) {
       </Button>
       
       <Button 
-        className="flex items-center gap-2 bg-[#FF9777] hover:bg-[#FF9777] rounded-br-lg rounded-tl-lg rounded-tr-none rounded-bl-none"
+        className="flex items-center gap-2 bg-[#FF9777] hover:bg-[#FF9777] rounded-br-lg rounded-tl-lg rounded-tr-lg rounded-bl-lg md:rounded-tr-none md:rounded-bl-none"
         onClick={onEdit}
       >
-        <Edit className="w-8 h-8" />
+        <Edit className="w-12 h-12" />
         MODIFIER LE COMPTE DU PARTICIPANT
       </Button>
     </div>
